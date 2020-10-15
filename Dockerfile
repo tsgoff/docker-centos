@@ -1,6 +1,6 @@
 FROM centos
 
-RUN dnf -y install epel-release openssh-clients dnf-utils
+RUN dnf -y install epel-release openssh-clients dnf-utils git
 RUN dnf install -y python3 python3-libs python3-devel python3-pip
 RUN pip3 install --upgrade pip
 RUN pip3 install awscli youtube-dl --upgrade
